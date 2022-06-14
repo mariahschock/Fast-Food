@@ -8,7 +8,7 @@ export default function BerryDropdown({ setBerries }) {
         <option value="strawberries">Strawberries</option>
         <option value="raspberries">Raspberries</option>
         <option value="blackberries">Blackberries</option>
-        <option value="blueberries">Blueberreis</option>
+        <option value="blueberries">Blueberries</option>
       </select>
     </div>
   );
