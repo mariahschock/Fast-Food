@@ -6,6 +6,7 @@ import ProduceDropdown from './ProduceDropdown';
 import Pick from './Pick';
 import Name from './Name';
 import CommentsForm from './CommentsForm';
+import CommentsList from './CommentsList';
 
 function App() {
   const [berries, setBerries] = useState('strawberries');
@@ -19,7 +20,7 @@ function App() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    setComments(...comments, commentsForm);
+    setComments([...comments, commentsForm]);
 
     setCommentsForm('');
   }
@@ -34,7 +35,7 @@ function App() {
       <p>Welcome to Alchemy U-Pick! Please decide ahead of time what you would like to pick. Make sure to include your name and any additional comments!</p>
       <section className="user-info">
         <Name setName={ setName } name={ name }/>
-        <CommentsForm handleSubmit={handleSubmit} setCommentsForm={ setCommentsForm } />
+        <CommentsForm handleSubmit={handleSubmit} setCommentsForm={ setCommentsForm } commentsForm={ commentsForm } />
       </section>
       <section className="dropdowns">
         <BerryDropdown setBerries={ setBerries } /> <br />
@@ -48,8 +49,10 @@ function App() {
           produce={produce} />
       </section>
       <section>
-        <h2>{name}</h2>
-        <h3>{comments}</h3>
+        <h2>Pickers Name: {name}</h2>
+        <h3>
+          <CommentsList comments={ comments } />
+        </h3>
       </section>
     </div>
   );
