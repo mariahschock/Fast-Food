@@ -54,3 +54,11 @@ img {
 select {
   margin: 10px;
 }
+input {
+  margin: 10px;
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
