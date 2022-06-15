@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+main {
+  background-size:cover;
+  height: 1000px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+header {
+  height: 75px;
+  font-family:monospace;
+  font-size: 2rem;
+}
+p {
+  font-family: monospace;
+  font-size: 2rem;
+  background-color: rgba(211, 211, 211, 0.546);
+}
+img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(211, 211, 211, 0.546);
+  border: 2px solid rgb(47, 46, 46);
+}
+.dropdowns {
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  margin: 10px;
+}
+select {
+  margin: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+input {
+  margin: 10px;
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.displayInfo {
+  background-color: rgba(211, 211, 211, 0.546);
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+button {
+  font-family: monospace;
+  font-size: 1.25rem
+}
+input {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+}
